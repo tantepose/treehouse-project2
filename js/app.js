@@ -128,6 +128,6 @@ function searchItems () { //clicks on the search button
           }
 
       createPagination(); //create new pagination
-      showItems(1); //display the first page of pagination
+      showItems(1, $(".page-button")[0]); //display the first page of pagination
   }
 }
