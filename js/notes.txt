@@ -31,3 +31,25 @@ X When the "Search" button is clicked, the list of students is filtered to match
 For example if the name Phillip is typed into the box list all students whose name or email includes Phillip.
 
 X If no matches are found by the search, include a message in the HTML to tell the user there are no matches.
+
+*************
+
+Hi!
+
+So, finally, project 2 is ready.
+
+Making the pagination and search work went without any big hurldes. But when I realized I needed pagination on the search results aswell, there were a few issues.
+
+The first was figuring out how I should handle not making a pagination of all items, but just the search matches. I added a "match" class to all items on startup, and removed this from items that did *not* match a search when a search was being made.
+
+This way the pagination only deals with matched, or "matched" (all on startup), items.
+
+My second problem was loosing the event handlers on the pagination buttons when a new pagination was being made after a new search. I found a solution by adding the event handler to the document it self (if I'm not mistaking).
+
+For these reasons this was a more challenging project than I thought, and I guess there are a hundred other ways of solving this, but I hope mine makes sense.
+
+I'm aiming for the "Exceeds expectations" on this one, and cross my fingers!
+
+Thanks.
+
+- Ole Petter
